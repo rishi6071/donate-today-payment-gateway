@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.navbar {
+    letter-spacing: 0.8px;
+    box-shadow: 0px 0px 3px grey;
+}
+
+/* Navbar Brand ICON & NAME */
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    margin-left: 15px;
+    transform: scale(1.2);
+}
+
+.navbar .navbar-brand span {
+    padding-left: 14px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: 500;
+    font-size: larger;
+    color: darkslategray;
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler {
+    border: none;
+}

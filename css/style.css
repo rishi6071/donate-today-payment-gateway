@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+/* 
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;     
+    font-family: 'Akaya Telivigala', cursive;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.section_heading {
+  font-family: "Akaya Telivigala", cursive;
+  color: darkslategray;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.section_heading span:nth-child(2) {
+    display: block;
+    margin: 5px auto;
+    width: 70px;
+    height: 4.5px;
+    border-radius: 10px;
+    background: rebeccapurple;
+}
+
+/* Banner Box & Payment Gateway Button */
+.banner_box {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
