@@ -40,6 +40,7 @@ body {
   background: #555;
 }
 
+/* Section Heading */
 .section_heading {
   font-family: "Akaya Telivigala", cursive;
   color: darkslategray;
@@ -128,6 +129,7 @@ body {
   border-radius: 0;
   color: white;
   padding: 6px 30px;
+  margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 1px solid grey;
