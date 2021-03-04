@@ -19,11 +19,19 @@
 
 .navbar .navbar-brand span {
     padding-left: 14px;
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-family: 'Akaya Telivigala', cursive;
     font-weight: 500;
     font-size: larger;
     color: darkslategray;
+}
+
+a.nav-link {
+    color: darkslategray !important;
+    margin: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: larger;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
 /* Navbar Toggler Icon */
