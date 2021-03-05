@@ -3,9 +3,9 @@
 
 <head>
     <!-- || meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- || title tag & tab icon -->
     <title>Payment Gateway Integration</title>
@@ -18,7 +18,9 @@
     <!-- || Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/assurance.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
 </head>
 
 <body>
@@ -64,6 +66,11 @@
                     <br />
                     <span class="banner_text_author">- Ronnie Chan</span>
                 </p>
+                <!-- <button id="rzp-button1">Pay</button> -->
+                <form>
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                        data-payment_button_id="pl_GirWYnFJGpAxry" id="razorpay_donate_button" async> </script>
+                </form>
             </div>
         </div>
     </main>
@@ -111,43 +118,45 @@
 
     <!-- || Contact Us Section Start -->
     <section id="contactus">
-        <div class="container my-5">
+        <div class="container-fluid my-5">
             <h2 class="section_heading">
                 <span>Contact Us</span>
                 <span></span>
             </h2>
 
-            <div class="container">
-                <div class="row mt-4">
-                    <div class="col-lg-6">
+            <div class="container-fluid">
+                <div class="row pt-3" id="contact_section">
+                    <div class="col-lg-6 order-lg-first order-last mt-4">
                         <!-- Contact Form -->
-                        <form class="contact_form" onsubmit="event.preventDefault();" autocomplete="off"
-                            method="GET">
-                            <div class="mb-3">
-                                <label for="contactName" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="contactName" aria-describedby="nameHelp"
-                                    required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactEmail" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="contactEmail" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactSubject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="contactSubject" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactMessage" class="form-label">Message</label>
-                                <textarea name="contactMessage" class="form-control" id="contactMessage" rows="4"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-secondary submit_button">Submit</button>
-                        </form>
+                        <div class="container-lg">
+                            <form class="contact_form" onsubmit="event.preventDefault();" autocomplete="off" method="GET">
+                                <div class="mb-4">
+                                    <label for="contactName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="contactName" aria-describedby="nameHelp"
+                                        required />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="contactEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" required />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="contactSubject" required />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea name="contactMessage" class="form-control" id="contactMessage" rows="4"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-secondary submit_button">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-last order-first mt-4">
                         <!-- Map -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7360.098188652592!2d75.87940952155458!3d22.72641654041516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4773f75357%3A0xd4c16ad55b02adbe!2sNew%20Palasia%2C%20Indore%2C%20Madhya%20Pradesh%20452001!5e0!3m2!1sen!2sin!4v1614890032622!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7360.098188652592!2d75.87940952155458!3d22.72641654041516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4773f75357%3A0xd4c16ad55b02adbe!2sNew%20Palasia%2C%20Indore%2C%20Madhya%20Pradesh%20452001!5e0!3m2!1sen!2sin!4v1614890032622!5m2!1sen!2sin"
+                            class="contact_map" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                 </div>
@@ -161,6 +170,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <!-- Razorpay Payment -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <script src="./js/razorpay.js" defer></script>
 </body>
 
 </html>
