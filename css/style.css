@@ -58,3 +58,20 @@ body {
   border-radius: 10px;
   background: rebeccapurple;
 }
+
+/* Footer */
+footer {
+  background: rgb(102, 101, 101);
+  color: lightgrey;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer span {
+  font-style: italic;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 16px;
+}
