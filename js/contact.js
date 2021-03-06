@@ -5,6 +5,9 @@ const contactUs = (event) => {
     const userSubject = document.querySelector('#contactSubject');
     const userMessage = document.querySelector('#contactMessage');
 
-    alert(`Name- ${userName.value} \nEmail- ${userEmail.value} \nSubject- ${userSubject.value} \nMessage- ${userMessage.value}`);
+    swal({
+        text: `Name- ${userName.value} \nEmail- ${userEmail.value} \nSubject- ${userSubject.value} \nMessage- ${userMessage.value}`,
+        icon: 'success'
+    });
     [userName.value, userEmail.value, userSubject.value, userMessage.value] = ['', '', '', ''];
 }
