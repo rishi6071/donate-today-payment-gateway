@@ -45,6 +45,9 @@
                         <a class="nav-link" href="#assurance">Assurance</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#analytics">Analytics</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contactus" tabindex="-1">Contact-Us</a>
                     </li>
                 </ul>
@@ -57,7 +60,7 @@
     <!-- || Banner & Payment Section Start -->
     <main id="donate">
         <div class="banner_box">
-            <img src="./img/bannerImg.jpg" alt="Banner Image" />
+            <img src="./img/banner/banner.jpg" alt="Banner Image" />
             <div class="overlay">
                 <h5 class="banner_heading">You have the Power to<br /> Bring Happiness</h5>
                 <p class="banner_text">It does not matter how much we donate; it matters whether the donation is
@@ -79,7 +82,7 @@
 
     <!-- || Assurances Start -->
     <section id="assurance">
-        <div class="container">
+        <div class="container mb-4">
             <h2 class="section_heading">
                 <span>Our Assurance to You</span>
                 <span></span>
@@ -116,9 +119,44 @@
     <!-- || Assurances End -->
 
 
+    <!-- || Analytics Section Start -->
+    <section id="analytics">
+        <div class="">
+            <h2 class="section_heading">
+                <span>Our Analytics</span>
+                <span></span>
+            </h2>
+
+            <div class="analytics_box mt-4 pt-3 pb-4">
+                <div class="analytics_item">
+                    <img src="./img/icon/donators.png" alt="Donators" />
+                    <h3 class="analytics_count"><span data-count="250">0</span>+</h3>
+                    <h5 class="analytics_term">Donators</h5>
+                </div>
+                <div class="analytics_item">
+                    <img src="./img/icon/projects.png" alt="Projects" />
+                    <h3 class="analytics_count"><span data-count="10">0</span>+</h3>
+                    <h5 class="analytics_term">Projects</h5>
+                </div>
+                <div class="analytics_item">
+                    <img src="./img/icon/team.png" alt="Team" />
+                    <h3 class="analytics_count"><span data-count="40">0</span>+</h3>
+                    <h5 class="analytics_term">Team</h5>
+                </div>
+                <!-- <div class="analytics_item">
+                    <img src="./img/icon/team.png" alt="Team" />
+                    <h3 class="analytics_count"><span data-count="40">0</span>+</h3>
+                    <h5 class="analytics_term">Team</h5>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- || Analytics Section End -->
+
+
     <!-- || Contact Us Section Start -->
     <section id="contactus">
-        <div class="container-fluid my-5">
+        <div class="container-fluid mt-4 mb-5">
             <h2 class="section_heading">
                 <span>Contact Us</span>
                 <span></span>
@@ -178,6 +216,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- Analytics Count -->
+    <script src="./js/analyticsCount.js"></script>
 
     <!-- Razorpay Payment -->
     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>

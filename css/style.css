@@ -52,14 +52,48 @@ body {
 
 .section_heading span:nth-child(2) {
   display: block;
-  margin: 5px auto;
+  margin: 6px auto;
   width: 70px;
-  height: 4.5px;
+  height: 4px;
   border-radius: 10px;
-  background: rebeccapurple;
+  background: rgba(102, 51, 153, 0.637);
 }
 
-/* Footer */
+/***** Analytics */
+.analytics_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: url('../img/banner/analytics.jpg');
+}
+
+.analytics_box .analytics_item {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.analytics_box .analytics_item img {
+  width: 90px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  border: 4px double black;
+  border-radius: 50%;
+}
+
+.analytics_box .analytics_item .analytics_count {
+  margin-top: 15px;
+}
+
+.analytics_box .analytics_item .analytics_term {
+  font-variant: small-caps;
+  /* font-weight: bolder; */
+  letter-spacing: 1px;
+  font-size: 20px !important;
+}
+
+/***** Footer */
 footer {
   background: rgb(102, 101, 101);
   color: lightgrey;
@@ -72,6 +106,6 @@ footer {
 
 footer span {
   font-style: italic;
-  font-family: 'Akaya Telivigala', cursive;
+  font-family: "Akaya Telivigala", cursive;
   font-size: 16px;
 }
