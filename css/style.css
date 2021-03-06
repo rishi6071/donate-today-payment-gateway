@@ -119,3 +119,20 @@ footer span {
   font-family: "Akaya Telivigala", cursive;
   font-size: 16px;
 }
+
+/* FAQ */
+#faq_box .accordion-header {
+  background: rgba(211, 211, 211, 0.233);
+  letter-spacing: 0.8px !important;
+}
+
+#faq_box .accordion-body {
+  padding-left: 30px !important;
+  color: rgb(109, 109, 109) !important;
+}
+
+@media screen and (min-width: 768px) {
+  #faq_box .accordion-body {
+    padding-left: 40px !important;
+  }
+}
