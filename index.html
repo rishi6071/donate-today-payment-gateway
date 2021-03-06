@@ -192,7 +192,7 @@
                     <div class="col-md-6 order-md-first order-last mt-4">
                         <!-- Contact Form -->
                         <div class="container-lg px-lg-5">
-                            <form class="contact_form" onsubmit="event.preventDefault();" autocomplete="off"
+                            <form class="contact_form" onsubmit="event.preventDefault(); contactUs();" autocomplete="off"
                                 method="GET">
                                 <div class="mb-4">
                                     <label for="contactName" class="form-label">Your Name</label>
@@ -252,6 +252,9 @@
     <!-- Razorpay Payment -->
     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
     <script src="./js/razorpay.js" defer></script>
+
+    <!-- Contact Form -->
+    <script src="./js/contact.js" defer></script>
 </body>
 
 </html>
