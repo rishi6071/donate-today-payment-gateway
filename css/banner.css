@@ -57,3 +57,9 @@
         height: 450px;
     }
 }
+
+@media screen and (max-width: 450px) {
+  .banner_heading {
+    font-size: 2.2em;
+  }
+}
